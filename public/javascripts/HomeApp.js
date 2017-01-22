@@ -3,51 +3,7 @@ var app = angular.module('myblog',['duScroll']); // the second and third argueme
 
 app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorSmoothScroll, $scope ){
 	
-			// $scope.submitNewMeow = function(){
-			// 	//console.log($scope.newMeow);//this logs the variable newMeow in the console
-			//
-			// 	//this next line is sending the data to the server
-			// 	$http.post('/meows',{ newMeow: $scope.newMeow }).then(function(){
-			// 		alert('succes!!');
-			// 		getMeows();//when we submit ,it calls the API again,hence refreshing
-			// 		$scope.newMeow='';//after submitting clears the string in the text input
-            //
-			// 	});
-            //
-			// }
-            //
-			// //we are calling removeMeow as a variable(i.e we do scope.removeMeow and not function removeMeow() )and not a function because we are calling it from the front end (and not from the server).
-			// //same holds good for 'submitNewMeow()' also.
-			// //As we are calling the function 'getMeows()' from the server we are declaring it as a function and not a scope variable
-			// $scope.removeMeow = function(deletethismeow){
-			// 		$http.put('/meows/remove',{meow: deletethismeow }).then(function(){
-			// 		getMeows();//when we submit ,it calls the API again,hence refreshing
-            //
-			// 	});
-			// };
-            //
-			// $scope.signin = function(){
-			// 	$http.put('/users/signin',{username : $scope.username,password : $scope.password })
-			// 	.then(function(res){
-			// 		console.log(res.data.token);
-			// 		$cookies.put('token',res.data.token);
-			// 		alert("successfully signed in!");
-			// 	},function(err){
-			// 		alert("could not sign you in,try again");
-            //
-			// 	});
-            //
-			// }
-            //
-			// function getMeows(){
-            //
-			// 	$http.get('/meows').then(function(response){
-			// 	$scope.meows=(response.data);
-			// });//this is an API call
-            //
-			// }
-            //
-			// getMeows();
+	
     $scope.skills=[
         "C/C++ , STL",
         "Java",
