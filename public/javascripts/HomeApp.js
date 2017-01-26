@@ -80,11 +80,11 @@ app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorS
             description:"Developed a Twitter like news,chats feed using MEAN ( MongoDB , ExpressJS , AngularJS and NodeJS ) stack.",
             ref:"http://www.github.com/aup8497/TwitterDup"
         },
-        {
-            title:"TweetHeatMap",
-            description:"Developed an Android App for Twitter feed on Google maps which maps live twitter feed from the user account on a Google map.",
-            ref:"http://www.github.com/aup8497/Map-Places"
-        },
+        // {
+        //     title:"TweetHeatMap",
+        //     description:"Developed an Android App for Twitter feed on Google maps which maps live twitter feed from the user account on a Google map.",
+        //     ref:"http://www.github.com/aup8497/Map-Places"
+        // },
         {
             title:"Snakes Game",
             description:"Developed a Dynamic Snakes game in shell script.Signals,traps,frames are implemented.Handled communication between foreground and background process by updating the frames continuously using their pid.",
