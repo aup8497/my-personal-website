@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html  class=" js rgba backgroundsize cssanimations cssgradients csstransforms fontface" >
-  <head>
+  <head >
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/animate.css">
@@ -12,8 +15,7 @@
     <link rel="stylesheet" href="stylesheets/overrides.css">
     <link rel="stylesheet" href="stylesheets/nojs.css">
 
-
-    <script src="javascripts/jquery.min.js"></script>
+      <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/angular.min.js"></script>
     <script src="javascripts/angular-scroll.min.js"></script> <!--used for the scroll animation-->
     <script src="javascripts/typed.min.js"></script>      <!--used for the type animation-->
@@ -25,6 +27,7 @@
   </head>
 
   <style>
+      /*head{font-size: 100%}*/
 
     canvas {
       display: block;
@@ -133,30 +136,30 @@
     <div class="small-nav nav">
       <ul>
         <li>
-          <a class="introduction" ng-click="gotoElement('introduction')">Intro</a>
+          <a class="introduction" role="button" ng-click="gotoElement('introduction')">Intro</a>
         </li>
 
         <li>
-          <a class="about" ng-click="gotoElement('about')">About</a>
+          <a class="about" role="button" ng-click="gotoElement('about')">About</a>
         </li>
 
         <li>
-          <a class="interests" ng-click="gotoElement('interests')">Interests</a>
+          <a class="interests" role="button" ng-click="gotoElement('interests')">Interests</a>
         </li>
 
         <li>
-          <a class="work" ng-click="gotoElement('work')">Work</a>
+          <a class="work" role="button" ng-click="gotoElement('work')">Work</a>
         </li>
 
         <li>
-          <a class="contact" ng-click="gotoElement('contact')">Contact</a>
+          <a class="contact" role="button" ng-click="gotoElement('contact')">Contact</a>
         </li>
       </ul>
     </div>
 
-    <div class="brand">
+    <div class="brand" style="font-size: x-small">
 
-      <h1 class="animated fadeInUp">Hello, I'm Akshay U Prabhu</h1>
+      <h1 class="animated fadeInUp">Hello, I'm Akshay </h1>
       <h2 class="animated fadeInUp">I <span class="pulse">&hearts;</span> to code.</h2>
     </div>
 
@@ -170,8 +173,8 @@
 
   <section id="about">
     <div class="container">
-      <div class="col-md-12 center">
-        <img class="profile-pic" src="images/Akshay_U_Prabhu.png" width="400" height="400">
+      <div class="col-md-12 center" style="font-size: 90% ">
+        <img class="profile-pic" src="images/Akshay_U_Prabhu.png" width="250" height="250">
 
         <h1>Hi there!</h1>
 
@@ -205,7 +208,7 @@
       <div class="row">
         <div class="concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/dev.jpg"></img>
+            <img src="images/dev.jpg" width="220" height="170" ></img>
           </div>
 
           <h3>Development</h3>
@@ -229,15 +232,15 @@
       <div class="row">
         <div class="column col-md-6 concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/CP.jpg" width="600" height="400" ></img>
+            <img src="images/CP.jpg" width="330" height="210" ></img>
           </div>
 
-          <h3>Competative Programming</h3>
+          <h3>Competitive Programming</h3>
 
           <div class="dash"></div>
 
           <p>
-            I <span class="heart"></span> Competative Coding and I'm passionatte about it.
+            I <span class="heart"></span> Competitive Coding and I'm passionatte about it.
             I love everything about it to its very nature.
             I am active on codeforces , codechef and hackerrank.
           </p>
@@ -247,7 +250,7 @@
 
         <div class="column col-md-6 concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/art_and_music.jpg"></img>
+            <img src="images/art_and_music.jpg" width="210" height="210" ></img>
           </div>
 
           <h3>Art and Music</h3>
@@ -269,46 +272,32 @@
   </section>
 
 
-  <section id="work">
-    <div class="container">
-      <h1>Projects</h1>
-      Will be updated soon
-      <!--<div class="left col-md-8">-->
-        <!--<h3>Image Scraper</h3>-->
-        <!--<div class="padded">-->
-          <!--A high performance, easy to use, multithreaded command line tool which downloads images from the given webpage.-->
-          <!--<br>-->
-          <!--<a href="https://github.com/sananth12/ImageScraper">https://github.com/sananth12/ImageScraper</a>-->
-        <!--</div>-->
-        <!--<br>-->
-        <!--<h3>Fire Notes</h3>-->
-        <!--<div class="padded">-->
-          <!--Fire Notes is a notes sharing platform where students can upload, maintain versions and download notes.-->
-          <!--<br>-->
-          <!--<a href="http://notes.deltaforce.club">http://notes.deltaforce.club</a>-->
-          <!--<br>-->
-          <!--<a href="https://github.com/delta/NotesSharing">https://github.com/delta/NotesSharing</a>-->
-        <!--</div>-->
-        <!--<br>-->
-        <!--<h3>Quoter</h3>-->
-        <!--<div class="padded">-->
-          <!--Quoter delivers the Quote of the Day from www.brainyquote.com, and keeps track of unread quotes to display when offline.-->
-          <!--<br>-->
-          <!--<a href="https://github.com/sananth12/Quote-of-the-Day">https://github.com/sananth12/Quote-of-the-Day</a>-->
-        <!--</div>-->
-        <!--<br>-->
-        <!--<h3>Sauron</h3>-->
-        <!--<div class="padded">-->
-          <!--Sauron reminds the user to take regular breaks at 20 minute intervals for 20 seconds and helps prevent RSI & CVS.-->
-          <!--<br>-->
-          <!--<a href="https://github.com/sananth12/sauron">https://github.com/sananth12/sauron</a>-->
-        <!--</div>-->
-      <!--</div>-->
+  <section id="work" style="font-size: 100%">
+    <div class="container" >
 
-      <div class="right col-md-4">
+
+      <!--Will be updated soon-->
+        <h1>Projects</h1>
+
+      <div class="left col-md-8" >
+      <div  ng-repeat="p in projects" >
+
+            <h3>{{p.title}}</h3>
+            <div class="padded">
+                {{p.description}}<br>
+                <a href="{{p.ref}}">{{p.ref}}</a>
+            </div>
+
+            <br>
+        </div>
+      </div>
+
+      <div class="right col-md-4" >
         <h2>Skills</h2>
         <div class="bars">
-          <div class="bar concealed visible animated fadeInRight" ng-repeat="x in skills">{{x}}</div>
+          <div class="bar concealed visible animated fadeInRight" ng-repeat="z in skills">
+            {{z}}
+          </div>
         </div>
         <h2>Tools</h2>
         <div class="bars">
@@ -323,7 +312,7 @@
 
   <section id="contact">
     <div class="container">
-      <div class="paperplane concealed visible animated bounceInDown"><img src="images/plane.png" width="100" height="100"  ></img></div>
+      <div class="paperplane concealed visible animated bounceInDown"><img src="images/plane.png" width="60" height="60"  ></img></div>
 
       <h1>Are you interested <div>?</div></h1>
       <p>Whether you have an interesting project or
@@ -340,8 +329,8 @@
 
       <h1>Here's my resumé</h1>
       <p>
-        <a class="contact" >                                                             <!-- Dont forget to add your resume here-->
-          Resumé<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+        <a class="contact" href="https://www.dropbox.com/s/n2jmbwe17r8i6q1/final%20My%20resume%20as%20on%2023rd%20Jan.pdf?dl=0">                                                             <!-- Dont forget to add your resume here-->
+          Resumé<i class="fa fa-file-pdf-o" aria-hidden="true" ></i>
         </a>
       </p>
     </div>

@@ -48,6 +48,51 @@ app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorS
 			// }
             //
 			// getMeows();
+    $scope.projects=[
+        {
+            title:"Image Synthesizer (Ongoing)",
+            description:"Developing a Prisma like app in python using Convolutional Neural networks and Deep learning techniques",
+            ref:"https://github.com/aup8497/Prisma-neural-art"
+        },
+        {
+            title:"Charity Webapp (Ongoing)",
+            description:"Created a website in MEAN ( MongoDB , ExpressJS , AngularJS and NodeJS ) Stack which helps poor students to apply scholarships online to get scholarships from donors.",
+            ref:"http://www.github.com/aup8497/CharityWebapp"
+
+        },
+        {
+            title:"Monopoly Game (Ongoing)",
+            description:"Working in a team to develop Classic Multiplayer Monopoly game in Android .The player can either play against a bot or can play against humans.",
+            ref:"http://www.github.com/aup8497/Monopoly-Game"
+        },
+        {
+            title:"My Personal Website",
+            description:"My Personal website using MEAN ( MongoDB , ExpressJS , AngularJS and NodeJS )stack,jQuery,HTML,CSS.",
+            ref:"https://github.com/aup8497/my-personal-website"
+        },
+        {
+            title:"Instant Music Downloader",
+            description:"Developed an Android App which can download any songs in just one click.Users can search and download songs by song,artist,lyrics and more.User also gets lyrics of the song displayed on the screen.",
+            ref:"http://www.github.com/aup8497/Instant-Song-Downloader-App"
+        },
+        {
+            title:"TwitterDup",
+            description:"Developed a Twitter like news,chats feed using MEAN ( MongoDB , ExpressJS , AngularJS and NodeJS ) stack.",
+            ref:"http://www.github.com/aup8497/TwitterDup"
+        },
+        {
+            title:"TweetHeatMap",
+            description:"Developed an Android App for Twitter feed on Google maps which maps live twitter feed from the user account on a Google map.",
+            ref:"http://www.github.com/aup8497/Map-Places"
+        },
+        {
+            title:"Snakes Game",
+            description:"Developed a Dynamic Snakes game in shell script.Signals,traps,frames are implemented.Handled communication between foreground and background process by updating the frames continuously using their pid.",
+            ref:"http://www.github.com/aup8497/Snake-s-Game"
+        }
+
+    ]
+
     $scope.skills=[
         "C/C++ , STL",
         "Java",
