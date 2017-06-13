@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html  class=" js rgba backgroundsize cssanimations cssgradients csstransforms fontface" style="overflow: auto;">
-  <head >
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<html  class=" js rgba backgroundsize cssanimations cssgradients csstransforms fontface" >
+  <head>
 
     <link rel="stylesheet" href="stylesheets/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/animate.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/Akshay_U_Prabhu.png" >
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="stylesheets/main.min.css">
     <link rel="stylesheet" href="stylesheets/home.css">
-    <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/overrides.css">
     <link rel="stylesheet" href="stylesheets/nojs.css">
 
- <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
 
-      <script src="javascripts/jquery.min.js"></script>
+    <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/angular.min.js"></script>
     <script src="javascripts/angular-scroll.min.js"></script> <!--used for the scroll animation-->
     <script src="javascripts/typed.min.js"></script>      <!--used for the type animation-->
@@ -28,6 +23,66 @@
 
     <title> Akshay U Prabhu </title>
   </head>
+
+  <style>
+
+    canvas {
+      display: block;
+      vertical-align: bottom;
+    }
+
+    .logos1 {
+      max-width:20%;
+      max-height:95px;
+      width: auto;
+      height: auto;
+      padding-right: 5%;
+    }
+
+    .logos2 {
+      max-width:23%;
+      max-height:75px;
+      width: auto;
+      height: auto;
+      padding-right: 5%;
+    }
+    .logos3{
+      max-width:20%;
+      max-height:50px;
+      width: auto;
+      height: auto;
+      padding-right: 5%;
+    }
+    .logos4 {
+      max-width:20%;
+      width: auto;
+      height: auto;
+      padding-right: 5%;
+    }
+    .logos5 {
+      max-width:12%;
+      width: auto;
+      height: auto;
+    }
+    .logos6 {
+      max-width:16%;
+      width: auto;
+      height: auto;
+    }
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;   /*this is the background colour of the particles*/
+      background-image: url("");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+  </style>
+
 
   <body ng-app="myblog" ng-controller="MainCtrl" >
   <div id="particles-js"></div>
@@ -78,36 +133,35 @@
     <div class="small-nav nav">
       <ul>
         <li>
-          <a class="introduction" role="button" ng-click="gotoElement('introduction')">Intro</a>
+          <a class="introduction" ng-click="gotoElement('introduction')">Intro</a>
         </li>
 
         <li>
-          <a class="about" role="button" ng-click="gotoElement('about')">About</a>
+          <a class="about" ng-click="gotoElement('about')">About</a>
         </li>
 
         <li>
-          <a class="interests" role="button" ng-click="gotoElement('interests')">Interests</a>
+          <a class="interests" ng-click="gotoElement('interests')">Interests</a>
         </li>
 
         <li>
-          <a class="work" role="button" ng-click="gotoElement('work')">Work</a>
+          <a class="work" ng-click="gotoElement('work')">Work</a>
         </li>
 
         <li>
-          <a class="contact" role="button" ng-click="gotoElement('contact')">Contact</a>
+          <a class="contact" ng-click="gotoElement('contact')">Contact</a>
         </li>
       </ul>
     </div>
 
-    <div class="brand" style="font-size: x-small">
+    <div class="brand">
 
-      <h1 class="animated fadeInUp" style="font-family: 'Gloria Hallelujah', cursive;"  >Hello, I'm Akshay </h1>
-      <h2 class="animated fadeInUp" style="font-family: 'Gloria Hallelujah', cursive;" >I <span class="pulse">&hearts;</span> to code.</h2>
+      <h1 class="animated fadeInUp">Hello, I'm Akshay U Prabhu</h1>
+      <h2 class="animated fadeInUp">I <span class="pulse">&hearts;</span> to code.</h2>
     </div>
 
     <div class="chevron animated fadeInUp">
-      <!-- <div role='button' ng-click="gotoElement('about')">Scroll down</> -->
-      <div class="bounce"><abc><a class="fa fa-arrow-down fa-2x" ng-click="gotoElement('about')" style="cursor: pointer;"></a></abc></div>
+      <div role='button' ng-click="gotoElement('about')">Scroll down</>
       <!--< class="flaticon-bullet3"  ></>-->
     </div>
   </section>`
@@ -116,8 +170,8 @@
 
   <section id="about">
     <div class="container">
-      <div class="col-md-12 center" style="font-size: 90% ">
-        <img class="profile-pic" src="images/Akshay_U_Prabhu.png" width="250" height="250">
+      <div class="col-md-12 center">
+        <img class="profile-pic" src="images/Akshay_U_Prabhu.png" width="400" height="400">
 
         <h1>Hi there!</h1>
 
@@ -151,7 +205,7 @@
       <div class="row">
         <div class="concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/dev.jpg" width="220" height="170" ></img>
+            <img src="images/dev.jpg"></img>
           </div>
 
           <h3>Development</h3>
@@ -175,15 +229,15 @@
       <div class="row">
         <div class="column col-md-6 concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/CP.jpg" width="330" height="210" ></img>
+            <img src="images/CP.jpg" width="600" height="400" ></img>
           </div>
 
-          <h3>Competitive Programming</h3>
+          <h3>Competative Programming</h3>
 
           <div class="dash"></div>
 
           <p>
-            I <span class="heart"></span> Competitive Coding and I'm passionatte about it.
+            I <span class="heart"></span> Competative Coding and I'm passionatte about it.
             I love everything about it to its very nature.
             I am active on codeforces , codechef and hackerrank.
           </p>
@@ -193,7 +247,7 @@
 
         <div class="column col-md-6 concealed visible animated fadeInUp">
           <div class="flaticon">
-            <img src="images/art_and_music.jpg" width="210" height="210" ></img>
+            <img src="images/art_and_music.jpg"></img>
           </div>
 
           <h3>Art and Music</h3>
@@ -202,7 +256,7 @@
 
           <p>
             Besides coding, reading books and playing outdoor games, I draw realistic sketches of people(relatives and friends) in my free time
-            , I'm a part of the artist forum at NITK .
+            , I'm there in the artist forum of our college .
             I play guitar as well.
           </p>
 
@@ -215,36 +269,50 @@
   </section>
 
 
-  <section id="work" style="font-size: 100%">
-    <div class="container" >
+  <section id="work">
+    <div class="container">
+      <h1>Projects</h1>
+      Will be updated soon
+      <!--<div class="left col-md-8">-->
+        <!--<h3>Image Scraper</h3>-->
+        <!--<div class="padded">-->
+          <!--A high performance, easy to use, multithreaded command line tool which downloads images from the given webpage.-->
+          <!--<br>-->
+          <!--<a href="https://github.com/sananth12/ImageScraper">https://github.com/sananth12/ImageScraper</a>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<h3>Fire Notes</h3>-->
+        <!--<div class="padded">-->
+          <!--Fire Notes is a notes sharing platform where students can upload, maintain versions and download notes.-->
+          <!--<br>-->
+          <!--<a href="http://notes.deltaforce.club">http://notes.deltaforce.club</a>-->
+          <!--<br>-->
+          <!--<a href="https://github.com/delta/NotesSharing">https://github.com/delta/NotesSharing</a>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<h3>Quoter</h3>-->
+        <!--<div class="padded">-->
+          <!--Quoter delivers the Quote of the Day from www.brainyquote.com, and keeps track of unread quotes to display when offline.-->
+          <!--<br>-->
+          <!--<a href="https://github.com/sananth12/Quote-of-the-Day">https://github.com/sananth12/Quote-of-the-Day</a>-->
+        <!--</div>-->
+        <!--<br>-->
+        <!--<h3>Sauron</h3>-->
+        <!--<div class="padded">-->
+          <!--Sauron reminds the user to take regular breaks at 20 minute intervals for 20 seconds and helps prevent RSI & CVS.-->
+          <!--<br>-->
+          <!--<a href="https://github.com/sananth12/sauron">https://github.com/sananth12/sauron</a>-->
+        <!--</div>-->
+      <!--</div>-->
 
-
-      <!--Will be updated soon-->
-        <h1>Projects</h1>
-
-      <div class="left col-md-8" >
-      <div  ng-repeat="p in projects" >
-
-            <h3>{{p.title}}</h3>
-            <div class="padded">
-                {{p.description}}<br>
-                <a href="{{p.ref}}">{{p.ref}}</a>
-            </div>
-
-            <br>
-        </div>
-      </div>
-
-      <div class="right col-md-4" >
+      <div class="right col-md-4">
         <h2>Skills</h2>
         <div class="bars">
-          <div class="bar concealed visible animated fadeInRight" ng-repeat="z in skills">
-            {{z}}
-          </div>
+          <div class="bar concealed visible animated fadeInRight" ng-repeat="x in skills">{{x}}</div>
         </div>
         <h2>Tools</h2>
         <div class="bars">
-          <div class="bar concealed visible animated fadeInRight" ng-repeat="x in Tools">{{x}}</div>
+          <div class="bar concealed visible animated fadeInRight" ng-repeat="x in skills">{{x}}</div>
         </div>
       </div>
 
@@ -255,13 +323,13 @@
 
   <section id="contact">
     <div class="container">
-      <div class="paperplane concealed visible animated bounceInDown"><img src="images/plane.png" width="60" height="60"  ></img></div>
+      <div class="paperplane concealed visible animated bounceInDown"><img src="images/plane.png" width="100" height="100"  ></img></div>
 
       <h1>Are you interested <div>?</div></h1>
       <p>Whether you have an interesting project or
         just want to say hi, feel free to shoot me a message.</p>
 
-      <a class="contact" href="mailto:15it203.akshayup@nitk.edu.in">
+      <a class="contact" href="mailto:akshayupcode@gmail.com">
         Say Hi!<i class="flaticon-speech39"></i>
       </a>
     </div>
@@ -272,8 +340,8 @@
 
       <h1>Here's my resumé</h1>
       <p>
-        <a class="contact" href="https://www.dropbox.com/s/tk64f64gjrqk9we/Akshay_U_Prabhu-MyResume.pdf?dl=0">                                                             <!-- Dont forget to add your resume here-->
-          Resumé<i class="fa fa-file-pdf-o" aria-hidden="true" ></i>
+        <a class="contact" >                                                             <!-- Dont forget to add your resume here-->
+          Resumé<i class="fa fa-file-pdf-o" aria-hidden="true"></i>
         </a>
       </p>
     </div>
@@ -295,7 +363,7 @@
           </a>
         </li>
         <li class="github">
-          <a href="https://github.com/aup8497">
+          <a href="https://github.com/akshayuprabhu">
             <i class="fa fa-github"></i>
             <p>GitHub</p>
           </a>
