@@ -3,6 +3,7 @@ var app = angular.module('myblog',['duScroll']); // the second and third argueme
 
 app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorSmoothScroll, $scope ){
 	
+<<<<<<< HEAD
 			// $scope.submitNewMeow = function(){
 			// 	//console.log($scope.newMeow);//this logs the variable newMeow in the console
 			//
@@ -93,6 +94,9 @@ app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorS
 
     ]
 
+=======
+	
+>>>>>>> 69ae85e7e2160c94c39bf896ee38fbec2a061c1a
     $scope.skills=[
         "C/C++ , STL",
         "Java",
