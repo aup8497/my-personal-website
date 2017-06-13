@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  class=" js rgba backgroundsize cssanimations cssgradients csstransforms fontface" >
+<html  class=" js rgba backgroundsize cssanimations cssgradients csstransforms fontface" style="overflow-y: hidden;" >
   <head >
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,14 @@
     <link rel="stylesheet" href="stylesheets/animate.css">
     <link rel="stylesheet" href="stylesheets/animate.min.css">
     <link href="stylesheets/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/Akshay_U_Prabhu.png" >
     <link rel="stylesheet" href="stylesheets/main.min.css">
     <link rel="stylesheet" href="stylesheets/home.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/overrides.css">
     <link rel="stylesheet" href="stylesheets/nojs.css">
+
+ <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
 
       <script src="javascripts/jquery.min.js"></script>
     <script src="javascripts/angular.min.js"></script>
@@ -25,67 +28,6 @@
 
     <title> Akshay U Prabhu </title>
   </head>
-
-  <style>
-      /*head{font-size: 100%}*/
-
-    canvas {
-      display: block;
-      vertical-align: bottom;
-    }
-
-    .logos1 {
-      max-width:20%;
-      max-height:95px;
-      width: auto;
-      height: auto;
-      padding-right: 5%;
-    }
-
-    .logos2 {
-      max-width:23%;
-      max-height:75px;
-      width: auto;
-      height: auto;
-      padding-right: 5%;
-    }
-    .logos3{
-      max-width:20%;
-      max-height:50px;
-      width: auto;
-      height: auto;
-      padding-right: 5%;
-    }
-    .logos4 {
-      max-width:20%;
-      width: auto;
-      height: auto;
-      padding-right: 5%;
-    }
-    .logos5 {
-      max-width:12%;
-      width: auto;
-      height: auto;
-    }
-    .logos6 {
-      max-width:16%;
-      width: auto;
-      height: auto;
-    }
-
-    #particles-js {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: black;   /*this is the background colour of the particles*/
-      background-image: url("");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%;
-    }
-
-  </style>
-
 
   <body ng-app="myblog" ng-controller="MainCtrl" >
   <div id="particles-js"></div>
@@ -159,12 +101,13 @@
 
     <div class="brand" style="font-size: x-small">
 
-      <h1 class="animated fadeInUp">Hello, I'm Akshay </h1>
-      <h2 class="animated fadeInUp">I <span class="pulse">&hearts;</span> to code.</h2>
+      <h1 class="animated fadeInUp" style="font-family: 'Gloria Hallelujah', cursive;"  >Hello, I'm Akshay </h1>
+      <h2 class="animated fadeInUp" style="font-family: 'Gloria Hallelujah', cursive;" >I <span class="pulse">&hearts;</span> to code.</h2>
     </div>
 
     <div class="chevron animated fadeInUp">
-      <div role='button' ng-click="gotoElement('about')">Scroll down</>
+      <!-- <div role='button' ng-click="gotoElement('about')">Scroll down</> -->
+      <div class="bounce"><abc><a class="fa fa-arrow-down fa-2x" ng-click="gotoElement('about')" style="cursor: pointer;"></a></abc></div>
       <!--< class="flaticon-bullet3"  ></>-->
     </div>
   </section>`

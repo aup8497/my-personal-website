@@ -98,11 +98,16 @@ app.controller('MainCtrl' ,function ($document,$location,$anchorScroll , anchorS
         "Java",
         "Python",
         "Android",
+        "Tensorflow",
+        "keras",
         "Shell scripting(BASH)",
-        "Javascript , NodeJS , AngularJS",
+        "Javascript" , "NodeJS" , "AngularJS",
         "SQL , MongoDB",
         "SQL",
         "Git",
+        "AMP",
+        "NGINX",
+        "Ionic Framework",
         "HTML5, CSS3"
     ]
     $scope.Tools=[
